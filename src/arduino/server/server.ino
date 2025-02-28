@@ -58,7 +58,11 @@ void handleRequest()
         isCat();
     }
 
-    server.send(200, "text/plain", "LED actualizado: " + value > 0.5 ? "Perro" : "Gato");
+    server.send(200, "text/plain", "LED actualizado: " + String(value > 0.5 ? "Perro" : "Gato"));
+
+    delay(10000);
+
+    none();
 }
 
 void isDog()
@@ -75,7 +79,6 @@ void isCat()
 
 void none()
 {
-    delay(10000);
     Serial.println("Apagando LEDs");
     digitalWrite(ledDog, LOW);
     digitalWrite(ledCat, LOW);
