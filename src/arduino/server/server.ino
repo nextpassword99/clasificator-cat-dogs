@@ -6,7 +6,7 @@ const char *pass = "edisonp21";
 
 ESP8266WebServer server(80);
 
-const int ledDog = 2;
+const int ledDog = 5;
 const int ledCat = 4;
 
 void setup()
