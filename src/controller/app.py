@@ -2,7 +2,7 @@ import requests
 from src.services.predict import PredictService
 
 
-path_model = 'models/cat_dog_classifier_improved5.h5'
+path_model = 'models/cat_dog_classifier_improved20.h5'
 predict_service = PredictService(path_model)
 
 
