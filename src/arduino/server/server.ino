@@ -73,13 +73,12 @@ void isDog()
 
 void isCat()
 {
-    digitalWrite(ledDog, LOW);
     digitalWrite(ledCat, HIGH);
+    digitalWrite(ledDog, LOW);
 }
 
 void none()
 {
-    Serial.println("Apagando LEDs");
-    digitalWrite(ledDog, LOW);
     digitalWrite(ledCat, LOW);
+    digitalWrite(ledDog, LOW);
 }
