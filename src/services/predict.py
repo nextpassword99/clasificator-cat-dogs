@@ -25,7 +25,6 @@ class PredictService:
 
     def _preprocess_image(self, image_path, target_size=(150, 150)):
         try:
-            image_path = image_path.replace('"', '').trip()
             img = cv2.imread(image_path)
             if img is None:
                 print(f'No se pudo cargar la imagen: {image_path}')
